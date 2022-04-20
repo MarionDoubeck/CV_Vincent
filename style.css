@@ -7,6 +7,7 @@ body{
   grid-template-columns: 33% 66%;
   grid-template-areas: 'l r';
   font-size: 16px;
+  -webkit-print-color-adjust: exact;
 }
 .leftColumn{
   grid-area: l;
