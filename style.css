@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 33% 66%;
+  grid-template-areas: 'l r';
+  font-size: 16px;
+}
+.leftColumn{
+  grid-area: l;
+  background-color: rgb(12, 66, 54);
+  color: white;
+  padding: 3rem;
+}
+.rightColumn{
+  grid-area: r;
+  padding: 3rem;
+}
+h1{
+  text-transform: uppercase;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  margin-top: 4rem;
+}
+.leftColumn h1::before{
+  content: "";
+  position: absolute;
+  display: block;
+  top: -.8rem;
+  left: 0;
+  height: .2rem;
+  width: 100%;
+  background-color: white;
+}
+.rightColumn h1::before{
+  content: "";
+  position: absolute;
+  display: block;
+  top: -.8rem;
+  left: 0;
+  height: .2rem;
+  width: 100%;
+  background-color: black;
+}
+
+ul{
+  margin: 1rem;
+  padding: 0;
+}
+li{
+  margin-bottom: .4rem;
+}
+/*************************************************/
+.pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pic>img{
+  width: 200px;
+}
+.coordonnees{
+  display: flex;
+  flex-direction: column;
+}
+.coordonnees>.content>div{
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.coordonnees span{
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+}
+
+/*************************************************/
+
+#nom{
+  color: rgb(12, 66, 54);
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+}
+#profession{
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: initial;
+}
+.experience{
+  display: grid;
+  margin-bottom: 1.5rem;
+  grid-template-areas: 
+    'm d'
+    'l l'
+    'xp xp';
+  grid-template-columns: 80% 20%;
+}
+.metier{
+  grid-area: m;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: .3rem;
+}
+.date{
+  grid-area: d;
+}
+.lieu{
+  grid-area: l;
+  font-weight: bold;
+}
+.ville{
+  font-weight: normal;
+}
+.xp{
+  grid-area: xp;
+}
