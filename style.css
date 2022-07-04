@@ -18,7 +18,7 @@ body{
 }
 .rightColumn{
   grid-area: r;
-  padding-left: 3rem;
+  padding: 3rem;
 }
 h1{
   text-transform: uppercase;
@@ -89,6 +89,7 @@ li{
   font-weight: bold;
   font-size: 2rem;
 }
+
 #profession{
   font-family: 'Dosis', sans-serif;
   font-weight: bold;
